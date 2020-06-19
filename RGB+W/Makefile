@@ -1,4 +1,4 @@
-PROGRAM = magic_home_strip
+PROGRAM = rgbw_Strip
 
 EXTRA_COMPONENTS = \
 	extras/http-parser \
