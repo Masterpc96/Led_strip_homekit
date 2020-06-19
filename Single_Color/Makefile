@@ -1,4 +1,4 @@
-PROGRAM = led_strip1
+PROGRAM = single_color
 
 EXTRA_COMPONENTS = \
 	extras/http-parser \
