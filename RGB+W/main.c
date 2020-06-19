@@ -103,8 +103,8 @@ void led_identify_task(void *_args) {
     printf("LED identify\n");
     
     rgb_color_t color = target_color;
-    rgb_color_t black_color = {0, 0, 0, 0};
-    rgb_color_t red_color = {255, 0, 0, 0};
+    rgb_color_t black_color = {{0, 0, 0, 0}};
+    rgb_color_t red_color = {{255, 0, 0, 0}};
     
     for (int i=0; i<3; i++) {
         for (int j=0; j<2; j++) {
@@ -152,7 +152,7 @@ void led_brightness_set(homekit_value_t value) {
     led_brightness = value.int_value;
 }
 
-homekit_value_t led_hue_get() {=
+homekit_value_t led_hue_get() {
     return HOMEKIT_FLOAT(led_hue);
 }
 
